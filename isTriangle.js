@@ -11,6 +11,7 @@ function checkIsTriangle() {
   var angle1 = Number(angles[0].value);
   var angle2 = Number(angles[1].value);
   var angle3 = Number(angles[2].value);
+  var flag = validateInput(angle1, angle2, angle3);
   const sumOfAngles = calculateSumOfAngles(angle1, angle2, angle3);
   if (sumOfAngles === 180) {
     outputElement.innerText = "Yay! The angles form a triangle";
